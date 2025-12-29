@@ -17,7 +17,7 @@ jobs:
        github.event.comment.author_association == 'MEMBER' ||
        github.event.comment.author_association == 'COLLABORATOR')
 
-    uses: OpenArtel/.github/.github/workflows/score-issue-reusable.yml@main
+    uses: OpenArtel/.github/.github/workflows/score-issue.yml@main
     with:
       issue_number: ${{ github.event.issue.number }}
       command: ${{ github.event.comment.body }}
